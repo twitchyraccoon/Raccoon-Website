@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html onmousewheel="alerty()" onmousemove="alerty();" onload="alerty();">
+
+<head> 
+    <script>
+        var object = 'an';
+        var j = 2;
+        var bananas = '&#x1f34c;';
+        var max = 70;
+        function alerty() {
+            if (j >=max) {
+                document.getElementById('banana').innerHTML = bananas.repeat(j);
+                document.getElementById('ya').innerHTML = bananas.repeat(1);
+                document.getElementById('b').innerHTML = bananas.repeat(1);
+                return;
+            }
+            document.getElementById("banana").innerHTML = object.repeat(j);
+            j++;
+        }
+
+        function restart() {
+            j = 2;
+            document.getElementById('ya').innerHTML = 'ya!';
+            document.getElementById('b').innerHTML = 'B';
+            document.getElementById("banana").innerHTML = object.repeat(j);
+        }
+    </script>
+    <style>
+        html  {
+  -webkit-user-select: none; /* Safari 3.1+ */
+  -moz-user-select: none; /* Firefox 2+ */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none; /* Standard syntax */
+}
+    </style>
+    <title>Bananya Website &#x1f34c;</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136773792-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-136773792-1');
+</script>
+
+</head>
+
+<body style="font-family:Arial, Helvetica, sans-serif">
+    <p style="font-family:Arial;font-size: 200%">&#x1f34c; + Ananya = <b>BANANYA</b></p>
+    <p style="display:inline-block;letter-spacing: -4px" id="b" onclick="restart();">B</p>
+    <p id="banana" style="white-space: nowrap;display: inline-block" class="bananya" onclick="restart();"></p>
+    <p style="display:inline-block;margin-left: -5px" onclick="restart();" id="ya">ananya!</p>
+</body>
+
+</html>

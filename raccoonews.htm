@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<head>
+<script>
+function display(idi){
+document.getElementById(idi).style.display = 'none';
+} //greatest script in the world made by yours truly
+</script>
+<style>
+head
+{
+margin: 0;
+font-family: Arial;
+}
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #f97f03;
+    color: white;
+}
+h1 {
+    text-align: left;
+    color: #ff6600;
+}
+p {
+    text-indent: 50px;
+    text-align: justify;
+    letter-spacing: 3px;
+}
+a {
+    text-decoration:none;
+    color: #008CBA;
+}
+</style>
+
+<div class="topnav"  id="taskbar"onclick="display('taskbar')">
+  <a href="https://Raccoons.cc/" style="font-family:Arial;font-size:14px">Home</a>
+  <a class="active" href="https://Raccoons.cc/raccoonews.htm" style="font-family:Arial;font-size:14px">raccoonews</a>
+  <a href="https://Raccoons.cc/find%20us.htm" style="font-family:Arial;font-size:14px">find us</a>
+  <a href="https://Raccoons.cc/about.htm" style="font-family:Arial;font-size:14px">About</a>
+</div>
+
+<title>Raccoon website &#x1f99d;</title>
+<link rel="shortcut icon" href="Raccoons.ico"/>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136773792-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-136773792-1');
+</script>
+
+</head>
+
+
+
+
+<body>
+
+<h1 style="font-family:Arial"  id="question" onclick="display('question');myFunction();">Click on this text. If you get the #2 then you're pretty lucky</h1>
+<script>
+function myFunction() {
+    
+var randomy = Math.floor(Math.random() * 11);
+window.alert(randomy);
+if (randomy == 2){
+window.alert("Welp today's your lucky day!");
+}else{
+window.alert("Try again next time, but make sure to bring some lucky charms");
+}
+}
+</script>
+<br/>
+<br/>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr" id="twitter" onclick="display(twitter)">Raccoons are awesome 🦀</p>&mdash; Raccoon vu (@twitchyraccoon2) <a href="https://twitter.com/twitchyraccoon2/status/1075596091356266496?ref_src=twsrc%5Etfw">December 20, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>   
+<br/>
+<script>
+function getSearchParameters() {
+      var prmstr = window.location.search.substr(1);
+	  console.log(prmstr);
+	  		if(prmstr != null && prmstr != ""){
+			document.write("Why are you adding GET requests?...");
+			}
+		//document.getElementById('json2').innerHTML = prmstr;
+      return prmstr != null && prmstr != "";	  
+	  }
+var params = getSearchParameters();
+</script>
+<p style="font-family:Arial;font-size:14px" onclick="display('json2')" id="json2" ></p>
+</body>
+</html>
