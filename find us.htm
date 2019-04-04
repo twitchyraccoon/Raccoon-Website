@@ -39,6 +39,7 @@ font-family: Arial;
 .topnav {
     background-color: #333;
     overflow: hidden;
+    border-radius: 5pt;
 }
 
 /* Style the links inside the navigation bar */
@@ -84,21 +85,12 @@ function clearo(){
 document.write();
 }
 </script>
-<div class="topnav" onclick="display('taskbar')" id="taskbar">
+<nav class="topnav" onclick="display('taskbar')" id="taskbar">
   <a href="https://Raccoons.cc/" style="font-family:Arial;font-size:14px">Home</a>
   <a href="https://Raccoons.cc/raccoonews.htm" style="font-family:Arial;font-size:14px">raccoonews</a>
   <a class="active" href="https://Raccoons.cc/find%20us.htm" style="font-family:Arial;font-size:14px">find us</a>
   <a href="https://Raccoons.cc/about.htm" style="font-family:Arial;font-size:14px">About</a>
-</div>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136773792-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-136773792-1');
-</script>
+</nav>
 
 </head>
 <body>

@@ -1,29 +1,24 @@
 <!DOCTYPE html>
-<html lang="en" id="webpage" onmousemove="alerto()">
+<html lang="en" id="webpage">
 
 <head>
   <meta charset="UTF-11">
   <meta name="robots" content="index, follow" />
+  <html lang="en" id="text" onmousemove="alerto()">
   <meta name="Raccoon website" content="the best website in antartica " />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="raccoons websites and more" />
   <meta name="theme-color" content="#f97f03" />
   <meta name="keywords"
-    content="raccoon,website,william vu,raccoons are awesome,vu,william,twitchyraccoon,twitchyracoon,twitchyraccoon2, " />
-  <div class="topnav" onmousemove="alerto()" style="border-color:grey;" id="taskbar" onclick="display('taskbar')">
+    content="raccoon,website,william vu,raccoons are awesome,vu,william,twitchyraccoon,twitchyracoon,twitchyraccoon2, "/>
+  <nav class="topnav" onmousemove="alerto()" style="border-color:grey;" id="taskbar" onclick="display('taskbar')">
     <a class="active" href="https://Raccoons.cc/" style="font-family:Arial;font-size:14px">Home</a>
     <a href="https://Raccoons.cc/raccoonews.htm" style="font-family:Arial;font-size:14px">raccoonews</a>
     <a href="https://Raccoons.cc/find%20us.htm" style="font-family:Arial;font-size:14px">find us</a>
     <a href="https://Raccoons.cc/about.htm" style="font-family:Arial;font-size:14px">About</a>
     <a href="https://Raccoons.cc/secretraccoonpage.html" id="GET" style="display:none;margin-bottom:-4pt">&#x1f99d;</a>
-  </div>
+  </nav>
   <style>
-    html  {
-  -webkit-user-select: none; /* Safari 3.1+ */
-  -moz-user-select: none; /* Firefox 2+ */
-  -ms-user-select: none; /* IE 10+ */
-  user-select: none; /* Standard syntax */
-}
     head {
       margin: 0;
       font-family: Arial;
@@ -32,6 +27,7 @@
     .topnav {
       background-color: #333;
       overflow: hidden;
+      border-radius: 5pt;
     }
 
     /* Style the links inside the navigation bar */
@@ -111,15 +107,6 @@
   <title id="title">Raccoon website &#x1f99d;</title>
   <link rel="shortcut icon" href="Raccoons.ico" />
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136773792-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-136773792-1');
-</script>
 
 </head>
 
@@ -127,93 +114,6 @@
   <noscript>Sorry but your browser does not support javascript and thus you cannot interact with many of the features on
     this website</noscript>
   <script>
-    window.addEventListener("keydown", function (event) {
-      let str = event.key;
-      console.log(str);
-      if (str == '#') {
-        document.getElementById('GET').style.display = 'block';
-      }
-      switch (str) {
-        case 'q':
-          document.getElementById('emojo').innerHTML = '🦀';
-          break;
-        case 'w':
-          document.getElementById('emojo').innerHTML = '🦃';
-          break;
-        case 'e':
-          document.getElementById('emojo').innerHTML = '🐿️';
-          break;
-        case 'r':
-          document.getElementById('emojo').innerHTML = '🕊️';
-          break;
-        case 't':
-          document.getElementById('emojo').innerHTML = '🐒';
-          break;
-        case 'y':
-          document.getElementById('emojo').innerHTML = '🐕';
-          break;
-        case 'u':
-          document.getElementById('emojo').innerHTML = '🐺';
-          break;
-        case 'i':
-          document.getElementById('emojo').innerHTML = '🐈';
-          break;
-        case 'o':
-          document.getElementById('emojo').innerHTML = '🐅';
-          break;
-        case 'p':
-          document.getElementById('emojo').innerHTML = '🐆';
-          break;
-        case 'a':
-          document.getElementById('emojo').innerHTML = '🐎';
-          break;
-        case 's':
-          document.getElementById('emojo').innerHTML = '🐃';
-          break;
-        case 'd':
-          document.getElementById('emojo').innerHTML = '🐖';
-          break;
-        case 'f':
-          document.getElementById('emojo').innerHTML = '🐪';
-          break;
-        case 'g':
-          document.getElementById('emojo').innerHTML = '🐫';
-          break;
-        case 'h':
-          document.getElementById('emojo').innerHTML = '🐇';
-          break;
-        case 'j':
-          document.getElementById('emojo').innerHTML = '🐤';
-          break;
-        case 'k':
-          document.getElementById('emojo').innerHTML = '🐦';
-          break;
-        case 'l':
-          document.getElementById('emojo').innerHTML = '🐊';
-          break;
-        case 'z':
-          document.getElementById('emojo').innerHTML = '🐢';
-          break;
-        case 'x':
-          document.getElementById('emojo').innerHTML = '🐍';
-          break;
-        case 'c':
-          document.getElementById('emojo').innerHTML = '🐠';
-          break;
-        case 'v':
-          document.getElementById('emojo').innerHTML = '🐌';
-          break;
-        case 'b':
-          document.getElementById('emojo').innerHTML = '🐬';
-          break;
-        case 'n':
-          document.getElementById('emojo').innerHTML = '🐛';
-          break;
-        case 'm':
-          document.getElementById('emojo').innerHTML = '🍌';
-          break;
-      }
-    }, true);
     function display(idi) {
       document.getElementById(idi).style.display = 'none';
     } //greatest script in the world made by yours truly
@@ -236,7 +136,7 @@
 
   <button class="button" style="vertical-align:middle" id="button"
     onclick="setTimeout(myFunction, 1); display('button')" onmousemove="alerto()"><span>Raccoons</span></button>
-  <h1 id="emojo"></h1>
+
   <script>
     var Bananareplace;
     function myFunction() {
@@ -245,7 +145,7 @@
       var txt;
       var person = prompt("Please enter your name:", "Raccoon");
       if (person == null || person == "Raccoon") {
-        window.alert("please refresh the page and enter your name, for the Raccoons!");
+        txt = "please refresh the page and enter your name, for the Raccoons!";
       } else if (person == 'nathan' || person == 'nathan vong' || person == 'Nathan' || person == 'Nathan Vong') {
         window.alert('Get off of my website Mr. Ching Chong');
       } else if (person == 'bananya' || person == 'Bananya') {
@@ -253,22 +153,14 @@
         document.getElementById('webpage').innerHTML = BananyaReplace;
         var Bananareplace = true;
         var object = 'Raccoons are awesome &#x1f34c; ';
-      } else if (person == 'Josiah' || person == 'josiah') {
+      } else if(person == 'Josiah'||person == 'josiah'){
         window.alert('This Indian keeps unplugging my mouse/keyboard')
-      } else if (person == 'jack' || person == 'Jack') {
+      } else if(person == 'jack'||person == 'Jack'){
         window.alert('REEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE');
-      } else if (person == 'vaughn' || person == 'Vaughn') {
+      } else if(person == 'vaughn'||person == 'Vaughn'){
         window.alert("You're a booty hole");
-      } else if (person == 'isaac' || person == 'Isaac') {
-        window.alert('🤝*Handshake time*🤝');
-      } else if (person == 'William' || person == 'william') {
-        window.alert('How dare you type in my name?!');
-      } else if (person == 'prayuj' || person == 'Prayuj') {
-        window.alert('Youre so inefficient');
-      } else if (person == 'akhilesh' || person == 'Akhilesh') {
-        window.alert('Mr. Indian');
-      } else if (person == 'Sanjay' || person == 'sanjay') {
-        window.alert('I dont want your curry. Pakistan Forever');
+      }else if(person == 'isaac'||person == 'Isaac'){
+        windows.alert('🤝*Handshake time*🤝');
       }
       else {//the default message 
         txt = "Did you know that " + person + " agrees that Raccoons are awesome?";
@@ -276,7 +168,12 @@
       }
     }
   </script>
+
+
+  <br />
   <p style="font-family:Arial;font-size:14px" onmousemove="alerto()" onclick="display('json')" id="json"></p>
+  <br />
+
   <h5 style="font-family:Arial;font-size:14px" id="kool" onclick="gamez();">Raccoons are awesome
     &#x1f99d; </h5>
 
@@ -323,7 +220,7 @@
     onmouseout="displayform();" required
     placeholder="&#x1f99d; wowowowo, you erased my message :( ">You seem to know the trickery of this website. Got any suggestions on how to improve it? &#x1f99d;</textarea>
   <!----input type="button" value="Submit"--->
-  <a href="bananya.htm" style="text-decoration:none">&#x1f99d;&#x1f34c;</a>
+  <a href="bananya.htm">&#x1f99d;&#x1f34c;</a>
   <script>
     function getSearchParameters() {
       var prmstr = window.location.search.substr(1);
