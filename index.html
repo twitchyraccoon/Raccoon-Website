@@ -107,26 +107,98 @@
   <title id="title">Raccoon website &#x1f99d;</title>
   <link rel="shortcut icon" href="Raccoons.ico" />
 
-
+  <script>
+      var Bananareplace;
+      function myFunction() {
+        var SuperBananya = document.getElementById('webpage').innerHTML;
+        var BananyaReplace = SuperBananya.replace(/🦝|&#x1f99d;/g, '&#x1f34c;');
+        var txt;
+        var person = prompt("Please enter your name:", "Raccoon");
+        if (person == null || person == "Raccoon") {
+          txt = "please refresh the page and enter your name, for the Raccoons!";
+        } else if (person == 'nathan' || person == 'nathan vong' || person == 'Nathan' || person == 'Nathan Vong') {
+          window.alert('Get off of my website Mr. Ching Chong');
+        } else if (person == 'bananya' || person == 'Bananya') {
+          window.alert('🍌🍌Raccoons are awesome🍌🍌');
+          document.getElementById('webpage').innerHTML = BananyaReplace;
+          var Bananareplace = true;
+          var object = 'Raccoons are awesome &#x1f34c; ';
+        } else if(person == 'Josiah'||person == 'josiah'){
+          window.alert('This Indian keeps unplugging my mouse/keyboard')
+        } else if(person == 'jack'||person == 'Jack'){
+          window.alert('REEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE');
+        } else if(person == 'vaughn'||person == 'Vaughn'){
+          window.alert("You're a booty hole");
+        }else if(person == 'isaac'||person == 'Isaac'){
+          windows.alert('🤝*Handshake time*🤝');
+        }
+        else {//the default message 
+          txt = "Did you know that " + person + " agrees that Raccoons are awesome?";
+          window.alert(txt);
+        }
+      }
+      var clicked = false;
+      function display(idi) {
+        document.getElementById(idi).style.display = 'none';
+      } //greatest script in the world made by yours truly
+      function displays() {
+        // document.getElementById('form').style.display = 'none';
+        document.getElementById('form').innerHTML = 'Wowee, you were about to type into here! But guess what? This text-input-box does literally nothing. Your welcome &#x1f99d;&#x1f99d;';
+      } //greatest script in the world made by yours truly
+      function displayform() {
+        var clicked = true;
+        document.getElementById('demo').style.display = 'none';
+        document.getElementById('form').style.display = 'block';
+        document.getElementById('form').innerHTML = 'You seem to know the trickery of this website. Got any suggestions on how to improve it? &#x1f99d;';
+      }
+      function ghost() {
+        document.getElementById("demo").innerHTML = "";
+      }
+      var clicked;
+      var i = 2;
+      var object = 'Raccoons are awesome &#x1f99d; ';
+      function alerto() {
+        document.getElementById("demo").innerHTML = object.repeat(i);
+        console.log("Raccoons are awesome", i);
+        if (clicked === true) {
+          return;
+        }
+        i++;
+        if (i > 250) {
+          console.warn("Warning: Raccoon level is beginning to exceed limit!");
+        }
+        if (i > 400) {
+          console.error('Warning:Raccoon overflow in system!');
+          console.error('Run Raccoonware&#x1f99d; scan to detect the issue');
+          document.write('<pre style="word-wrap: break-word; white-space: pre-wrap;" id="spice">Error: too many Raccoons&#x1f99d;, please refresh page!</pre>');
+        }
+  
+      }
+      function gamez() {
+        var stringy = document.getElementById("kool").innerHTML;
+        var replaceo = stringy.replace("Raccoons are awesome ", "&#x1f99d;&#x1f99d;&#x1f99d;&#x1f99d;&#x1f99d;");
+        document.getElementById("kool").innerHTML = replaceo;
+        document.getElementById("kool").innerHTML = '&#x1f99d;&#x1f99d;&#x1f99d;&#x1f99d;&#x1f99d;&#x1f99d;&#x1f99d;&#x1f99d;&#x1f99d;&#x1f99d;';
+        // document.getElementById('look').onclick = "display('look')";
+      }
+      function getSearchParameters() {
+        var prmstr = window.location.search.substr(1);
+        console.log(prmstr);
+        if (prmstr == "raccoon") {
+          console.log("Raccoons are awesome");
+          document.getElementById('json').innerHTML = "Seems like you know your GET requests....";
+          document.getElementById('GET').style.display = 'block';
+          //document.getElementById('json').innerHTML = prmstr;
+        }
+        return prmstr != null && prmstr != "";
+      }
+      var params = getSearchParameters();
+    </script>
 </head>
 
 <body>
   <noscript>Sorry but your browser does not support javascript and thus you cannot interact with many of the features on
     this website</noscript>
-  <script>
-    function display(idi) {
-      document.getElementById(idi).style.display = 'none';
-    } //greatest script in the world made by yours truly
-    function displays() {
-      // document.getElementById('form').style.display = 'none';
-      document.getElementById('form').innerHTML = 'Wowee, you were about to type into here! But guess what? This text-input-box does literally nothing. Your welcome &#x1f99d;&#x1f99d;';
-    } //greatest script in the world made by yours truly
-    function displayform() {
-      document.getElementById('demo').style.display = 'none';
-      document.getElementById('form').style.display = 'block';
-      document.getElementById('form').innerHTML = 'You seem to know the trickery of this website. Got any suggestions on how to improve it? &#x1f99d;';
-    }
-  </script>
   <br />
 
   <p style="font-family:Arial;font-size:14px" onmousemove="alerto()" onclick="display('hello')" id="hello">Hello! This
@@ -136,40 +208,6 @@
 
   <button class="button" style="vertical-align:middle" id="button"
     onclick="setTimeout(myFunction, 1); display('button')" onmousemove="alerto()"><span>Raccoons</span></button>
-
-  <script>
-    var Bananareplace;
-    function myFunction() {
-      var SuperBananya = document.getElementById('webpage').innerHTML;
-      var BananyaReplace = SuperBananya.replace(/🦝|&#x1f99d;/g, '&#x1f34c;');
-      var txt;
-      var person = prompt("Please enter your name:", "Raccoon");
-      if (person == null || person == "Raccoon") {
-        txt = "please refresh the page and enter your name, for the Raccoons!";
-      } else if (person == 'nathan' || person == 'nathan vong' || person == 'Nathan' || person == 'Nathan Vong') {
-        window.alert('Get off of my website Mr. Ching Chong');
-      } else if (person == 'bananya' || person == 'Bananya') {
-        window.alert('🍌🍌Raccoons are awesome🍌🍌');
-        document.getElementById('webpage').innerHTML = BananyaReplace;
-        var Bananareplace = true;
-        var object = 'Raccoons are awesome &#x1f34c; ';
-      } else if(person == 'Josiah'||person == 'josiah'){
-        window.alert('This Indian keeps unplugging my mouse/keyboard')
-      } else if(person == 'jack'||person == 'Jack'){
-        window.alert('REEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE');
-      } else if(person == 'vaughn'||person == 'Vaughn'){
-        window.alert("You're a booty hole");
-      }else if(person == 'isaac'||person == 'Isaac'){
-        windows.alert('🤝*Handshake time*🤝');
-      }
-      else {//the default message 
-        txt = "Did you know that " + person + " agrees that Raccoons are awesome?";
-        window.alert(txt);
-      }
-    }
-  </script>
-
-
   <br />
   <p style="font-family:Arial;font-size:14px" onmousemove="alerto()" onclick="display('json')" id="json"></p>
   <br />
@@ -177,39 +215,6 @@
   <h5 style="font-family:Arial;font-size:14px" id="kool" onclick="gamez();">Raccoons are awesome
     &#x1f99d; </h5>
 
-
-  <script>
-    function ghost() {
-      document.getElementById("demo").innerHTML = "";
-    }
-  </script>
-  <script id="">
-    var i = 2;
-    var object = 'Raccoons are awesome &#x1f99d; ';
-    function alerto() {
-      document.getElementById("demo").innerHTML = object.repeat(i);
-      console.log("Raccoons are awesome", i);
-      i++;
-      if (i > 250) {
-        console.warn("Warning: Raccoon level is beginning to exceed limit!");
-      }
-      if (i > 400) {
-        console.error('Warning:Raccoon overflow in system!');
-        console.error('Run Raccoonware&#x1f99d; scan to detect the issue');
-        document.write('<pre style="word-wrap: break-word; white-space: pre-wrap;" id="spice">Error: too many Raccoons&#x1f99d;, please refresh page!</pre>');
-      }
-
-    }
-  </script>
-  <script>
-    function gamez() {
-      var stringy = document.getElementById("kool").innerHTML;
-      var replaceo = stringy.replace("Raccoons are awesome ", "&#x1f99d;&#x1f99d;&#x1f99d;&#x1f99d;&#x1f99d;");
-      document.getElementById("kool").innerHTML = replaceo;
-      document.getElementById("kool").innerHTML = '&#x1f99d;&#x1f99d;&#x1f99d;&#x1f99d;&#x1f99d;&#x1f99d;&#x1f99d;&#x1f99d;&#x1f99d;&#x1f99d;';
-      // document.getElementById('look').onclick = "display('look')";
-    }
-  </script>
   <blockquote class="twitter-tweet" id="tweet">
     <p lang="en" dir="ltr">Raccoons are awesome ??</p>&mdash; Raccoon vu (@twitchyraccoon2) <a
       href="https://twitter.com/twitchyraccoon2/status/1075596091356266496?ref_src=twsrc%5Etfw">December 20, 2018</a>
@@ -221,20 +226,7 @@
     placeholder="&#x1f99d; wowowowo, you erased my message :( ">You seem to know the trickery of this website. Got any suggestions on how to improve it? &#x1f99d;</textarea>
   <!----input type="button" value="Submit"--->
   <a href="bananya.htm">&#x1f99d;&#x1f34c;</a>
-  <script>
-    function getSearchParameters() {
-      var prmstr = window.location.search.substr(1);
-      console.log(prmstr);
-      if (prmstr == "raccoon") {
-        console.log("Raccoons are awesome");
-        document.getElementById('json').innerHTML = "Seems like you know your GET requests....";
-        document.getElementById('GET').style.display = 'block';
-        //document.getElementById('json').innerHTML = prmstr;
-      }
-      return prmstr != null && prmstr != "";
-    }
-    var params = getSearchParameters();
-  </script>
+
 </body>
 
 </html>
