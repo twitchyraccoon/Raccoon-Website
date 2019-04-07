@@ -10,7 +10,7 @@
   <meta name="description" content="raccoons websites and more" />
   <meta name="theme-color" content="#f97f03" />
   <meta name="keywords"
-    content="raccoon,website,william vu,raccoons are awesome,vu,william,twitchyraccoon,twitchyracoon,twitchyraccoon2, "/>
+    content="raccoon,website,william vu,raccoons are awesome,vu,william,twitchyraccoon,twitchyracoon,twitchyraccoon2, " />
   <nav class="topnav" onmousemove="alerto()" style="border-color:grey;" id="taskbar" onclick="display('taskbar')">
     <a class="active" href="https://Raccoons.cc/" style="font-family:Arial;font-size:14px">Home</a>
     <a href="https://Raccoons.cc/raccoonews.htm" style="font-family:Arial;font-size:14px">raccoonews</a>
@@ -28,6 +28,20 @@
       background-color: #333;
       overflow: hidden;
       border-radius: 5pt;
+      animation-name: navbar;
+      animation-duration: 1s;
+      -webkit-animation-name: navbar;
+      -webkit-animation-duration: 1s;
+    }
+
+    @keyframes navbar {
+      from {
+        margin-left: -2000px;
+      }
+
+      to {
+        margin-left: 0px;
+      }
     }
 
     /* Style the links inside the navigation bar */
@@ -108,92 +122,92 @@
   <link rel="shortcut icon" href="Raccoons.ico" />
 
   <script>
-      var Bananareplace;
-      function myFunction() {
-        var SuperBananya = document.getElementById('webpage').innerHTML;
-        var BananyaReplace = SuperBananya.replace(/🦝|&#x1f99d;/g, '&#x1f34c;');
-        var txt;
-        var person = prompt("Please enter your name:", "Raccoon");
-        if (person == null || person == "Raccoon") {
-          txt = "please refresh the page and enter your name, for the Raccoons!";
-        } else if (person == 'nathan' || person == 'nathan vong' || person == 'Nathan' || person == 'Nathan Vong') {
-          window.alert('Get off of my website Mr. Ching Chong');
-        } else if (person == 'bananya' || person == 'Bananya') {
-          window.alert('🍌🍌Raccoons are awesome🍌🍌');
-          document.getElementById('webpage').innerHTML = BananyaReplace;
-          var Bananareplace = true;
-          var object = 'Raccoons are awesome &#x1f34c; ';
-        } else if(person == 'Josiah'||person == 'josiah'){
-          window.alert('This Indian keeps unplugging my mouse/keyboard')
-        } else if(person == 'jack'||person == 'Jack'){
-          window.alert('REEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE');
-        } else if(person == 'vaughn'||person == 'Vaughn'){
-          window.alert("You're a booty hole");
-        }else if(person == 'isaac'||person == 'Isaac'){
-          windows.alert('🤝*Handshake time*🤝');
-        }
-        else {//the default message 
-          txt = "Did you know that " + person + " agrees that Raccoons are awesome?";
-          window.alert(txt);
-        }
+    var Bananareplace;
+    function myFunction() {
+      var SuperBananya = document.getElementById('webpage').innerHTML;
+      var BananyaReplace = SuperBananya.replace(/🦝|&#x1f99d;/g, '&#x1f34c;');
+      var txt;
+      var person = prompt("Please enter your name:", "Raccoon");
+      if (person == null || person == "Raccoon") {
+        txt = "please refresh the page and enter your name, for the Raccoons!";
+      } else if (person == 'nathan' || person == 'nathan vong' || person == 'Nathan' || person == 'Nathan Vong') {
+        window.alert('Get off of my website Mr. Ching Chong');
+      } else if (person == 'bananya' || person == 'Bananya') {
+        window.alert('🍌🍌Raccoons are awesome🍌🍌');
+        document.getElementById('webpage').innerHTML = BananyaReplace;
+        var Bananareplace = true;
+        var object = 'Raccoons are awesome &#x1f34c; ';
+      } else if (person == 'Josiah' || person == 'josiah') {
+        window.alert('This Indian keeps unplugging my mouse/keyboard')
+      } else if (person == 'jack' || person == 'Jack') {
+        window.alert('REEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE');
+      } else if (person == 'vaughn' || person == 'Vaughn') {
+        window.alert("You're a booty hole");
+      } else if (person == 'isaac' || person == 'Isaac') {
+        windows.alert('🤝*Handshake time*🤝');
       }
-      var clicked = false;
-      function display(idi) {
-        document.getElementById(idi).style.display = 'none';
-      } //greatest script in the world made by yours truly
-      function displays() {
-        // document.getElementById('form').style.display = 'none';
-        document.getElementById('form').innerHTML = 'Wowee, you were about to type into here! But guess what? This text-input-box does literally nothing. Your welcome &#x1f99d;&#x1f99d;';
-      } //greatest script in the world made by yours truly
-      function displayform() {
-        var clicked = true;
-        document.getElementById('demo').style.display = 'none';
-        document.getElementById('form').style.display = 'block';
-        document.getElementById('form').innerHTML = 'You seem to know the trickery of this website. Got any suggestions on how to improve it? &#x1f99d;';
+      else {//the default message 
+        txt = "Did you know that " + person + " agrees that Raccoons are awesome?";
+        window.alert(txt);
       }
-      function ghost() {
-        document.getElementById("demo").innerHTML = "";
+    }
+    var clicked = false;
+    function display(idi) {
+      document.getElementById(idi).style.display = 'none';
+    } //greatest script in the world made by yours truly
+    function displays() {
+      // document.getElementById('form').style.display = 'none';
+      document.getElementById('form').innerHTML = 'Wowee, you were about to type into here! But guess what? This text-input-box does literally nothing. Your welcome &#x1f99d;&#x1f99d;';
+    } //greatest script in the world made by yours truly
+    function displayform() {
+      var clicked = true;
+      document.getElementById('demo').style.display = 'none';
+      document.getElementById('form').style.display = 'block';
+      document.getElementById('form').innerHTML = 'You seem to know the trickery of this website. Got any suggestions on how to improve it? &#x1f99d;';
+    }
+    function ghost() {
+      document.getElementById("demo").innerHTML = "";
+    }
+    var clicked;
+    var i = 2;
+    var object = 'Raccoons are awesome &#x1f99d; ';
+    function alerto() {
+      document.getElementById("demo").innerHTML = object.repeat(i);
+      console.log("Raccoons are awesome", i);
+      if (clicked === true) {
+        return;
       }
-      var clicked;
-      var i = 2;
-      var object = 'Raccoons are awesome &#x1f99d; ';
-      function alerto() {
-        document.getElementById("demo").innerHTML = object.repeat(i);
-        console.log("Raccoons are awesome", i);
-        if (clicked === true) {
-          return;
-        }
-        i++;
-        if (i > 250) {
-          console.warn("Warning: Raccoon level is beginning to exceed limit!");
-        }
-        if (i > 400) {
-          console.error('Warning:Raccoon overflow in system!');
-          console.error('Run Raccoonware&#x1f99d; scan to detect the issue');
-          document.write('<pre style="word-wrap: break-word; white-space: pre-wrap;" id="spice">Error: too many Raccoons&#x1f99d;, please refresh page!</pre>');
-        }
-  
+      i++;
+      if (i > 250) {
+        console.warn("Warning: Raccoon level is beginning to exceed limit!");
       }
-      function gamez() {
-        var stringy = document.getElementById("kool").innerHTML;
-        var replaceo = stringy.replace("Raccoons are awesome ", "&#x1f99d;&#x1f99d;&#x1f99d;&#x1f99d;&#x1f99d;");
-        document.getElementById("kool").innerHTML = replaceo;
-        document.getElementById("kool").innerHTML = '&#x1f99d;&#x1f99d;&#x1f99d;&#x1f99d;&#x1f99d;&#x1f99d;&#x1f99d;&#x1f99d;&#x1f99d;&#x1f99d;';
-        // document.getElementById('look').onclick = "display('look')";
+      if (i > 400) {
+        console.error('Warning:Raccoon overflow in system!');
+        console.error('Run Raccoonware&#x1f99d; scan to detect the issue');
+        document.write('<pre style="word-wrap: break-word; white-space: pre-wrap;" id="spice">Error: too many Raccoons&#x1f99d;, please refresh page!</pre>');
       }
-      function getSearchParameters() {
-        var prmstr = window.location.search.substr(1);
-        console.log(prmstr);
-        if (prmstr == "raccoon") {
-          console.log("Raccoons are awesome");
-          document.getElementById('json').innerHTML = "Seems like you know your GET requests....";
-          document.getElementById('GET').style.display = 'block';
-          //document.getElementById('json').innerHTML = prmstr;
-        }
-        return prmstr != null && prmstr != "";
+
+    }
+    function gamez() {
+      var stringy = document.getElementById("kool").innerHTML;
+      var replaceo = stringy.replace("Raccoons are awesome ", "&#x1f99d;&#x1f99d;&#x1f99d;&#x1f99d;&#x1f99d;");
+      document.getElementById("kool").innerHTML = replaceo;
+      document.getElementById("kool").innerHTML = '&#x1f99d;&#x1f99d;&#x1f99d;&#x1f99d;&#x1f99d;&#x1f99d;&#x1f99d;&#x1f99d;&#x1f99d;&#x1f99d;';
+      // document.getElementById('look').onclick = "display('look')";
+    }
+    function getSearchParameters() {
+      var prmstr = window.location.search.substr(1);
+      console.log(prmstr);
+      if (prmstr == "raccoon") {
+        console.log("Raccoons are awesome");
+        document.getElementById('json').innerHTML = "Seems like you know your GET requests....";
+        document.getElementById('GET').style.display = 'block';
+        //document.getElementById('json').innerHTML = prmstr;
       }
-      var params = getSearchParameters();
-    </script>
+      return prmstr != null && prmstr != "";
+    }
+    var params = getSearchParameters();
+  </script>
 </head>
 
 <body>

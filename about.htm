@@ -1,121 +1,139 @@
 <!DOCTYPE html>
 <html lang="en-x-mtfrom-fr">
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
 <head>
-</div>
-<script>
-function display(idi){
-document.getElementById(idi).style.display = 'none';
-} //greatest script in the world made by yours truly
-</script>
-<nav class="topnav" onclick="display('taskbar')" id="taskbar">
-  <a href="https://Raccoons.cc/" style="font-family:Arial;font-size:14px">Home</a>
-  <a href="https://Raccoons.cc/raccoonews.htm" style="font-family:Arial;font-size:14px">raccoonews</a>
-  <a href="https://Raccoons.cc/find%20us.htm" style="font-family:Arial;font-size:14px">find us</a>
-  <a class="active" href="https://Raccoons.cc/about.htm" style="font-family:Arial;font-size:14px">About</a>
-</nav>
-<style>
-head
-{
-margin: 0;
-font-family: Arial;
-}
-.topnav {
-    background-color: #333;
-    overflow: hidden;
-    border-radius: 5pt;
-}
+    </div>
+    <script>
+        function display(idi) {
+            document.getElementById(idi).style.display = 'none';
+        } //greatest script in the world made by yours truly
+    </script>
+    <nav class="topnav" onclick="display('taskbar')" id="taskbar">
+        <a href="https://Raccoons.cc/" style="font-family:Arial;font-size:14px">Home</a>
+        <a href="https://Raccoons.cc/raccoonews.htm" style="font-family:Arial;font-size:14px">raccoonews</a>
+        <a href="https://Raccoons.cc/find%20us.htm" style="font-family:Arial;font-size:14px">find us</a>
+        <a class="active" href="https://Raccoons.cc/about.htm" style="font-family:Arial;font-size:14px">About</a>
+    </nav>
+    <style>
+        head {
+            margin: 0;
+            font-family: Arial;
+        }
 
-/* Style the links inside the navigation bar */
-.topnav a {
-    float: left;
-    color: #FFFFFF;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
+        .topnav {
+            background-color: #333;
+            overflow: hidden;
+            border-radius: 5pt;
+            animation-name: navbar;
+            animation-duration: 1s;
+            -webkit-animation-name: navbar;
+            -webkit-animation-duration: 1s;
+        }
 
-/* Change the color of links on hover */
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
-}
+        @keyframes navbar {
+            from {
+                margin-left: -2000px;
+            }
 
-/* Add a color to the active/current link */
-.topnav a.active {
-    background-color: #f97f03;
-    color: white;
-}
+            to {
+                margin-left: 0px;
+            }
+        }
 
-h1 {
-    text-align: left;
-    color: #ff6600;
-}
-p {
-    text-indent: 50px;
-    text-align: justify;
-    letter-spacing: 3px;
-}
-a {
-    text-decoration:none;
-    color: #008CBA;
-}
-</style>
-<title>Raccoon website &#x1f99d;</title>
-<link rel="shortcut icon" href="Raccoons.ico"/>
+        /* Style the links inside the navigation bar */
+        .topnav a {
+            float: left;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        /* Change the color of links on hover */
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Add a color to the active/current link */
+        .topnav a.active {
+            background-color: #f97f03;
+            color: white;
+        }
+
+        h1 {
+            text-align: left;
+            color: #ff6600;
+        }
+
+        p {
+            text-indent: 50px;
+            text-align: justify;
+            letter-spacing: 3px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #008CBA;
+        }
+    </style>
+    <title>Raccoon website &#x1f99d;</title>
+    <link rel="shortcut icon" href="Raccoons.ico" />
 </head>
+
 <body>
-<h1 style="font-family:Arial" id="awesome"onclick="display('awesome')">Raccoons are awesome&#x1f99d;</h1>
-<p style="font-family:Arial" id="website"onclick="display('website')">Hello! This is a website made by a person. Just in case you didn't know
-the whole website is a joke and all the text disappears when you press on it. Welp, Raccoons are awesome &#x1f99d;!</p>
-<br/>
+    <h1 style="font-family:Arial" id="awesome" onclick="display('awesome')">Raccoons are awesome&#x1f99d;</h1>
+    <p style="font-family:Arial" id="website" onclick="display('website')">Hello! This is a website made by a person.
+        Just in case you didn't know
+        the whole website is a joke and all the text disappears when you press on it. Welp, Raccoons are awesome
+        &#x1f99d;!</p>
+    <br />
 
-<form action="" name="Raccoon" method="">
-<fieldset id="form"onclick="display('form')">
-<legend>Contact form for an questions or inquiries you have (Boxes with * <b>MUST</b> be filled out)</legend>
-<p style="font-family:Arial"><label>name*</label>
-<input type=""/></p>
-<p style="font-family:Arial"><label>email*</label>
-<input type=""/></p>
-<p style="font-family:Arial"><label>Are Raccoons awesome*</label>
-<input type=""/></p>
+    <form action="" name="Raccoon" method="">
+        <fieldset id="form" onclick="display('form')">
+            <legend>Contact form for an questions or inquiries you have (Boxes with * <b>MUST</b> be filled out)
+            </legend>
+            <p style="font-family:Arial"><label>name*</label>
+                <input type="" /></p>
+            <p style="font-family:Arial"><label>email*</label>
+                <input type="" /></p>
+            <p style="font-family:Arial"><label>Are Raccoons awesome*</label>
+                <input type="" /></p>
 
-</fieldset>
+        </fieldset>
 
-</form>
-<button onclick="setTimeout(myFunction, 500); display('send')" id="send">send</button>
+    </form>
+    <button onclick="setTimeout(myFunction, 500); display('send')" id="send">send</button>
 
-<script>
-function myFunction() {
-    alert('Raccoons are awesome');
-}
-</script>
-<br/>
-<iframe  id="maps"onclick="display('maps')"
-  width="600"
-  height="450"
-  frameborder="0" style="border:0"
-  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCZiDrO22dvWSPkaYf-3CWxmFKteGDKRIs
+    <script>
+        function myFunction() {
+            alert('Raccoons are awesome');
+        }
+    </script>
+    <br />
+    <iframe id="maps" onclick="display('maps')" width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCZiDrO22dvWSPkaYf-3CWxmFKteGDKRIs
     &q=tampa+FL" allowfullscreen>
-</iframe>
+    </iframe>
 
 
-<br/>
+    <br />
 
 
 
-<script>
-function getSearchParameters() {
-      var prmstr = window.location.search.substr(1);
-	  console.log(prmstr);
-	  		if(prmstr != null && prmstr != ""){
-			document.write("Why are you adding GET requests?...");
-			}
-		//document.getElementById('json2').innerHTML = prmstr;
-      return prmstr != null && prmstr != "";	  
-	  }
-var params = getSearchParameters();
-</script>
+    <script>
+        function getSearchParameters() {
+            var prmstr = window.location.search.substr(1);
+            console.log(prmstr);
+            if (prmstr != null && prmstr != "") {
+                document.write("Why are you adding GET requests?...");
+            }
+            //document.getElementById('json2').innerHTML = prmstr;
+            return prmstr != null && prmstr != "";
+        }
+        var params = getSearchParameters();
+    </script>
 </body>
+
 </html>
