@@ -36,11 +36,11 @@
 
     @keyframes navbar {
       from {
-        margin-left: -2000px;
+        transform: translateX(-2000px);
       }
 
       to {
-        margin-left: 0px;
+        transform: translateX(0px);
       }
     }
 
@@ -78,6 +78,8 @@
       transition: all 0.5s;
       cursor: pointer;
       margin: 5px;
+      transition-property: transform;
+      transition-duration: 2s;
     }
 
     .button span {
@@ -207,6 +209,13 @@
       return prmstr != null && prmstr != "";
     }
     var params = getSearchParameters();
+    function slidespin() {
+      button = document.getElementsByClassName('button');
+      button[0].style.transform = "translateX(1000px)";
+      setTimeout(slidespin, 2000);
+       button[0].style.transform = 'rotate(360deg)';
+      // button[0].style.transform = "translateX(0px)";
+    }
   </script>
 </head>
 
@@ -221,7 +230,7 @@
   <br /><br />
 
   <button class="button" style="vertical-align:middle" id="button"
-    onclick="setTimeout(myFunction, 1); display('button')" onmousemove="alerto()"><span>Raccoons</span></button>
+    onclick="setTimeout(myFunction, 1); display('button')" onmousemove="alerto()" onmouseover="slidespin();"><span>Raccoons</span></button>
   <br />
   <p style="font-family:Arial;font-size:14px" onmousemove="alerto()" onclick="display('json')" id="json"></p>
   <br />
