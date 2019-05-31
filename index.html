@@ -119,11 +119,23 @@
     #form:hover {
       background-color: orange;
     }
+
+    #asian {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      display: none;
+      color: orange;
+      transform: rotateX('720deg');
+    }
+
   </style>
   <title id="title">Raccoon website &#x1f99d;</title>
   <link rel="shortcut icon" href="RaccoonEmojiIcon.ico" />
 
   <script>
+    function FellowAsian() {
+      var claire = document.getElementById('asian').style;
+      claire.display = 'block';
+    }
     var Bananareplace;
     function myFunction() {
       var SuperBananya = document.getElementById('webpage').innerHTML;
@@ -150,6 +162,11 @@
         windows.alert('🤝*Handshake time*🤝');
       } else if (person == 'Brian' || person == 'brian') {
         window.alert('a black man has infiltrated the website');
+      } else if (person == 'Claire' || person == 'claire') {
+        FellowAsian();
+       var raccoonWords = document.getElementById('webpage').innerHTML;
+       var asians = raccoonWords.replace(/Raccoons|Raccoon/gi, 'Asians🍜');
+       document.getElementById('webpage').innerHTML = asians;
       }
       else {//the default message 
         txt = "Did you know that " + person + " agrees that Raccoons are awesome?";
@@ -231,6 +248,8 @@
     is a webpage about Raccoons&#x1f99d;
     and if you didn't know, they're awesome </p>
   <br /><br />
+
+<h1 id="asian">Wassup Fellow Asian!</h1>
 
   <button class="button" style="vertical-align:middle" id="button"
     onclick="setTimeout(myFunction, 1); display('button')" onmousemove="alerto()" onmouseover="slidespin();"><span>Raccoons</span></button>
