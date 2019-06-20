@@ -130,8 +130,94 @@
   </style>
   <title id="title">Raccoon website &#x1f99d;</title>
   <link rel="shortcut icon" href="RaccoonEmojiIcon.ico" />
-
   <script>
+        window.addEventListener("keydown", function (event) {
+      let str = event.key;
+      console.log(str);
+      if (str == '#') {
+        document.getElementById('GET').style.display = 'block';
+      }
+      switch (str) {
+        case 'q':
+          document.getElementById('emojo').innerHTML = '🦀';
+          break;
+        case 'w':
+          document.getElementById('emojo').innerHTML = '🦃';
+          break;
+        case 'e':
+          document.getElementById('emojo').innerHTML = '🐿️';
+          break;
+        case 'r':
+          document.getElementById('emojo').innerHTML = '🕊️';
+          break;
+        case 't':
+          document.getElementById('emojo').innerHTML = '🐒';
+          break;
+        case 'y':
+          document.getElementById('emojo').innerHTML = '🐕';
+          break;
+        case 'u':
+          document.getElementById('emojo').innerHTML = '🐺';
+          break;
+        case 'i':
+          document.getElementById('emojo').innerHTML = '🐈';
+          break;
+        case 'o':
+          document.getElementById('emojo').innerHTML = '🐅';
+          break;
+        case 'p':
+          document.getElementById('emojo').innerHTML = '🐆';
+          break;
+        case 'a':
+          document.getElementById('emojo').innerHTML = '🐎';
+          break;
+        case 's':
+          document.getElementById('emojo').innerHTML = '🐃';
+          break;
+        case 'd':
+          document.getElementById('emojo').innerHTML = '🐖';
+          break;
+        case 'f':
+          document.getElementById('emojo').innerHTML = '🐪';
+          break;
+        case 'g':
+          document.getElementById('emojo').innerHTML = '🐫';
+          break;
+        case 'h':
+          document.getElementById('emojo').innerHTML = '🐇';
+          break;
+        case 'j':
+          document.getElementById('emojo').innerHTML = '🐤';
+          break;
+        case 'k':
+          document.getElementById('emojo').innerHTML = '🐦';
+          break;
+        case 'l':
+          document.getElementById('emojo').innerHTML = '🐊';
+          break;
+        case 'z':
+          document.getElementById('emojo').innerHTML = '🐢';
+          break;
+        case 'x':
+          document.getElementById('emojo').innerHTML = '🐍';
+          break;
+        case 'c':
+          document.getElementById('emojo').innerHTML = '🐠';
+          break;
+        case 'v':
+          document.getElementById('emojo').innerHTML = '🐌';
+          break;
+        case 'b':
+          document.getElementById('emojo').innerHTML = '🐬';
+          break;
+        case 'n':
+          document.getElementById('emojo').innerHTML = '🐛';
+          break;
+        case 'm':
+          document.getElementById('emojo').innerHTML = '🍌';
+          break;
+      }
+    }, true);
     function FellowAsian() {
       var claire = document.getElementById('asian').style;
       claire.display = 'block';
@@ -175,7 +261,6 @@
         window.alert(txt);
       }
     }
-    var clicked = false;
     function display(idi) {
       document.getElementById(idi).style.display = 'none';
     } //greatest script in the world made by yours truly
@@ -184,7 +269,6 @@
       document.getElementById('form').innerHTML = 'Wowee, you were about to type into here! But guess what? This text-input-box does literally nothing. Your welcome &#x1f99d;&#x1f99d;';
     } //greatest script in the world made by yours truly
     function displayform() {
-      var clicked = true;
       document.getElementById('demo').style.display = 'none';
       document.getElementById('form').style.display = 'block';
       document.getElementById('form').innerHTML = 'You seem to know the trickery of this website. Got any suggestions on how to improve it? &#x1f99d;';
@@ -192,13 +276,12 @@
     function ghost() {
       document.getElementById("demo").innerHTML = "";
     }
-    var clicked;
     var i = 2;
     var object = 'Raccoons are awesome &#x1f99d; ';
     function alerto() {
       document.getElementById("demo").innerHTML = object.repeat(i);
       console.log("Raccoons are awesome", i);
-      if (clicked === true) {
+      if (document.getElementById('demo').style.display === 'none') {
         return;
       }
       i++;
@@ -224,7 +307,7 @@
       console.log(prmstr);
       if (prmstr == "raccoon") {
         console.log("Raccoons are awesome");
-        document.getElementById('json').innerHTML = "Seems like you know your GET requests....";
+        // document.getElementById('json').innerHTML = "Seems like you know your GET requests....";
         document.getElementById('GET').style.display = 'block';
         //document.getElementById('json').innerHTML = prmstr;
       }
@@ -255,7 +338,7 @@
 
   <button class="button" style="vertical-align:middle" id="button"
     onclick="setTimeout(myFunction, 1); display('button')" onmousemove="alerto()" onmouseover="slidespin();"><span>Raccoons</span></button>
-  <br />
+    <h1 id="emojo"></h1>
   <p style="font-family:Arial;font-size:14px" onmousemove="alerto()" onclick="display('json')" id="json"></p>
   <br />
 
