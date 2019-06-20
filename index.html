@@ -19,6 +19,10 @@
     <a href="https://Raccoons.cc/secretraccoonpage.html" id="GET" style="display:none;margin-bottom:-4pt">&#x1f99d;</a>
   </nav>
   <style>
+    html {
+      user-select: none;
+    }
+
     head {
       margin: 0;
       font-family: Arial;
@@ -126,12 +130,11 @@
       color: orange;
       transform: rotateX('720deg');
     }
-
   </style>
   <title id="title">Raccoon website &#x1f99d;</title>
   <link rel="shortcut icon" href="RaccoonEmojiIcon.ico" />
   <script>
-        window.addEventListener("keydown", function (event) {
+    window.addEventListener("keydown", function (event) {
       let str = event.key;
       console.log(str);
       if (str == '#') {
@@ -250,9 +253,9 @@
         window.alert('a black man has infiltrated the website');
       } else if (person == 'Claire' || person == 'claire') {
         FellowAsian();
-       var raccoonWords = document.getElementById('webpage').innerHTML;
-       var asians = raccoonWords.replace(/Raccoons|Raccoon/gi, 'Asians🍜');
-       document.getElementById('webpage').innerHTML = asians;
+        var raccoonWords = document.getElementById('webpage').innerHTML;
+        var asians = raccoonWords.replace(/Raccoons|Raccoon/gi, 'Asians🍜');
+        document.getElementById('webpage').innerHTML = asians;
       } else if (person == 'akhilesh' || person == 'Akhilesh') {
         window.alert('Goodluck on your Autocad Pro cert, AQUAFISH🐟');
       }
@@ -318,7 +321,7 @@
       button = document.getElementsByClassName('button');
       button[0].style.transform = "translateX(1000px)";
       setTimeout(slidespin, 2000);
-       button[0].style.transform = 'rotate(360deg)';
+      button[0].style.transform = 'rotate(360deg)';
       // button[0].style.transform = "translateX(0px)";
     }
   </script>
@@ -334,11 +337,12 @@
     and if you didn't know, they're awesome </p>
   <br /><br />
 
-<h1 id="asian">Wassup Fellow Asian!</h1>
+  <h1 id="asian">Wassup Fellow Asian!</h1>
 
   <button class="button" style="vertical-align:middle" id="button"
-    onclick="setTimeout(myFunction, 1); display('button')" onmousemove="alerto()" onmouseover="slidespin();"><span>Raccoons</span></button>
-    <h1 id="emojo"></h1>
+    onclick="setTimeout(myFunction, 1); display('button')" onmousemove="alerto()"
+    onmouseover="slidespin();"><span>Raccoons</span></button>
+  <h1 id="emojo"></h1>
   <p style="font-family:Arial;font-size:14px" onmousemove="alerto()" onclick="display('json')" id="json"></p>
   <br />
 
