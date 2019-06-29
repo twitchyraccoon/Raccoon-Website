@@ -30,20 +30,20 @@
             overflow: hidden;
             border-radius: 5pt;
             animation-name: navbar;
-            animation-duration: 1s;
-            -webkit-animation-name: navbar;
-            -webkit-animation-duration: 1s;
-        }
+      animation-duration: 1s;
+      -webkit-animation-name: navbar;
+      -webkit-animation-duration: 1s;
+    }
 
-        @keyframes navbar {
-            from {
-                margin-left: -2000px;
-            }
+    @keyframes navbar {
+      from {
+        transform: translateX(-2000px);
+      }
 
-            to {
-                margin-left: 0px;
-            }
-        }
+      to {
+        transform: translateX(0px);
+      }
+    }
 
         /* Style the links inside the navigation bar */
         .topnav a {
