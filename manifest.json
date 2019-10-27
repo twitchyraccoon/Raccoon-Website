@@ -1,0 +1,8 @@
+{
+    "short_name": "Raccoons.cc",
+    "name": "The Raccoon Website",
+    "start_url": "/",
+    "background_color": "#f97f03",
+    "display": "fullscreen",
+    "theme_color": "#f97f03"
+  }
