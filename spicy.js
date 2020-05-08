@@ -8,12 +8,12 @@
 
 var raccoonEmoji = document.getElementById('BigRaccoon');
 var loader = document.getElementById('PageLoader');
-var angle = 360;
+var angle = 720;
 
 var spin = setInterval(() => {
     raccoonEmoji.style.transform = 'rotate(' + angle + 'deg)';
     console.log('rotated!');
-    if (angle > 2000) {
+    if (angle > 2500) {
         clearInterval(spin);
         loader.style.opacity = '0';
         setTimeout(() => {

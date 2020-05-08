@@ -30,5 +30,6 @@ div#PageLoader {
 
 img#BigRaccoon {
     width: 150px;
+    transform: rotate(360deg);
     transition: transform 0.7s;
 }
