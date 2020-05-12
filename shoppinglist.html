@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="William Vu">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raccoon Website!</title>
+    <link rel="stylesheet" href="superstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Raccoon Website | Shopping List</title>
+</head>
+
+<body>
+    <div id="ModalBox">
+        <span id="ModalExit">&#x2716;</span>
+        <div id="ModalAdd">
+            <p>Enter Item:</p>
+            <input type="text" size="20">
+            <span id="ModalCheck">&#x2705;</span>
+        </div>
+    </div>
+    <div id="PageLoader">
+        <img src="WindowsRaccoonEmoji.png" alt="Raccoon Emoji" id="BigRaccoon">
+    </div>
+    <div id="ShoppingList">
+        <button type="button" id="AddItem">Add Item</button>
+        <div class="ItemGroup" style="display: none;">
+            <span class="RemoveItem">&#x2716;</span>
+            <p class="ItemDescript"></p>
+        </div>
+        <div class="ItemGroup">
+            <span class="RemoveItem">&#x2716;</span>
+            <p class="ItemDescript">Example item</p>
+        </div>
+    </div>
+</body>
+
+<script type="text/javascript" defer src="spicy.js"></script>
+
+</html>
