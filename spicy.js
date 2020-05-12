@@ -23,7 +23,6 @@ raccoonEmoji.style.opacity = '1';
 /* Page Loader */
 var spin = setInterval(() => {
     raccoonEmoji.style.transform = 'rotate(' + angle + 'deg)';
-    console.log('rotated!');
     if (angle > 2000) {
         clearInterval(spin);
         loader.style.opacity = '0';
@@ -43,7 +42,6 @@ function allowDestruction() {
         const certainObject = shopObject[i];
         certainDestroy.addEventListener('click', function () {
             certainObject.remove();
-            console.log('Entry removed!');
         });
     }
 }
@@ -80,7 +78,6 @@ function addAnotherItem() {
         shopObject[1].children[1].innerHTML = textEntry;
         shopObject[1].style.display = 'flex';
         sort(shopObject);
-        console.log(compareWords(shopObject[1].children[1].innerHTML, shopObject[2].children[1].innerHTML));
         allowDestruction();
     }
 }
@@ -91,10 +88,9 @@ function sort(object) {
         const originalShopObject = object[i].children[1].innerHTML;
         const nextShopObject = object[i + 1].children[1].innerHTML;
         if (compareWords(originalShopObject, nextShopObject) == 1) {
-            console.log('moving it forward');
             object[i].children[1].innerHTML = nextShopObject;
             object[i + 1].children[1].innerHTML = originalShopObject;
-        } else console.log('leaving it be');
+        }
 
     }
 }
@@ -105,18 +101,14 @@ function checkDuplicate(text) {
     for (var i = 0; i < shopObject.length; i++) {
         var shopContent = shopObject[i].children[1].innerHTML;
         if (shopContent == text) {
-            console.log('Item already exits')
             return false;
         }
     }
-    console.log('Item is unique');
     return true;
 }
 
 // compares 2 words to each other
 function compareWords(word1, word2) {
-    console.log(word1);
-    console.log(word2);
     for (var i = 0; i < word1.length; i++) {
         if (word1.toUpperCase().charCodeAt(i) < word2.toUpperCase().charCodeAt(i) || isNaN(word1.toUpperCase().charCodeAt(i))) {
             return -1;
