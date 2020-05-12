@@ -8,12 +8,19 @@ for my AP Computer Science Principals Create Task
                                                                 
 */
 
-/* Page Loader */
 var raccoonEmoji = document.getElementById('BigRaccoon');
 var loader = document.getElementById('PageLoader');
 var angle = 720;
+var shopObject = document.getElementsByClassName('ItemGroup');
+var destroyObject = document.getElementsByClassName('RemoveItem');
+var modalBox = document.getElementById('ModalBox');
+var modalAdd = document.getElementById('ModalAdd');
+var addAnother = document.getElementById('AddItem');
+var checkbox = document.getElementById('ModalCheck');
+var modalExit = document.getElementById('ModalExit');
 raccoonEmoji.style.opacity = '1';
-// raccoonEmoji.style.transform = 'rotate(' + angle + 'deg)';
+
+/* Page Loader */
 var spin = setInterval(() => {
     raccoonEmoji.style.transform = 'rotate(' + angle + 'deg)';
     console.log('rotated!');
@@ -27,10 +34,7 @@ var spin = setInterval(() => {
     angle = angle + 360;
 }, 800);
 
-// element removal
-var shopObject = document.getElementsByClassName('ItemGroup');
-var destroyObject = document.getElementsByClassName('RemoveItem');
-
+// allows an element to be destroyed
 allowDestruction();
 
 function allowDestruction() {
@@ -45,11 +49,7 @@ function allowDestruction() {
 }
 
 
-// modal stuff
-var modalBox = document.getElementById('ModalBox');
-var modalAdd = document.getElementById('ModalAdd');
-var modalExit = document.getElementById('ModalExit');
-
+// opens and closes the modal
 modalExit.addEventListener('click', function () {
     modalBox.style.display = 'none';
 });
@@ -59,26 +59,19 @@ modalBox.addEventListener('click', function (event) {
         modalBox.style.display = 'none';
     }
 });
-
-// confirm modal finish
-
-var addAnother = document.getElementById('AddItem');
-var checkbox = document.getElementById('ModalCheck');
-
 addAnother.addEventListener('click', function () {
     modalBox.style.display = 'flex';
-})
-
+    modalAdd.children[1].value = '';
+});
 modalAdd.children[1].addEventListener('keypress', function (event) {
     if (event.keyCode == 13) {
         addAnotherItem();
     }
 });
-
 checkbox.addEventListener('click', addAnotherItem);
 
 
-//adds the item and checks
+//Main algorithim, checks for duplicate and alphabetizes
 function addAnotherItem() {
     var textEntry = modalAdd.children[1].value;
     modalBox.style.display = 'none';
@@ -92,6 +85,7 @@ function addAnotherItem() {
     }
 }
 
+// sorts the new entry
 function sort(object) {
     for (let i = 1; i < object.length - 1; i++) {
         const originalShopObject = object[i].children[1].innerHTML;
@@ -119,6 +113,7 @@ function checkDuplicate(text) {
     return true;
 }
 
+// compares 2 words to each other
 function compareWords(word1, word2) {
     console.log(word1);
     console.log(word2);
