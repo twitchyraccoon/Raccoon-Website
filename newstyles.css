@@ -1,0 +1,36 @@
+/* 
+ ______                                         ______ _______ _______     
+|   __ \.---.-.----.----.-----.-----.-----.    |      |     __|     __|    
+|      <|  _  |  __|  __|  _  |  _  |     |    |   ---|__     |__     |    
+|___|__||___._|____|____|_____|_____|__|__|    |______|_______|_______|    
+                                                                           
+*/
+
+body {}
+
+p,
+h2 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+div#PageLoader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    transition: opacity 1s;
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+}
+
+img.BigRaccoon {
+    position: absolute;
+    opacity: 0;
+    width: 150px;
+    transform: rotate(360deg);
+    transition: transform 0.7s ease-in-out, opacity 1s, transform 1s;
+}

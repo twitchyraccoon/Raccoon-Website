@@ -95,7 +95,6 @@ function sort(object) {
     }
 }
 
-
 // checks if the item already exists
 function checkDuplicate(text) {
     for (var i = 0; i < shopObject.length; i++) {
