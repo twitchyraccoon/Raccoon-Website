@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+div#PageLoader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    height: 100%;
+    width: 100%;
+    transition: opacity 5s;
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    opacity: 0;
+}
+
+img#BigRaccoon {
+    opacity: 0;
+    width: 150px;
+    transform: rotate(360deg);
+    transition: transform 0.7s ease-in-out, opacity 1s;
+    margin-bottom: 50px;
+}

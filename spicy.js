@@ -8,9 +8,6 @@ for my AP Computer Science Principals Create Task
                                                                 
 */
 
-var raccoonEmoji = document.getElementById('BigRaccoon');
-var loader = document.getElementById('PageLoader');
-var angle = 720;
 var shopObject = document.getElementsByClassName('ItemGroup');
 var destroyObject = document.getElementsByClassName('RemoveItem');
 var modalBox = document.getElementById('ModalBox');
@@ -18,6 +15,9 @@ var modalAdd = document.getElementById('ModalAdd');
 var addAnother = document.getElementById('AddItem');
 var checkbox = document.getElementById('ModalCheck');
 var modalExit = document.getElementById('ModalExit');
+var loader = document.getElementById('PageLoader');
+var angle = 720;
+var raccoonEmoji = document.getElementById('BigRaccoon');
 raccoonEmoji.style.opacity = '1';
 
 /* Page Loader */

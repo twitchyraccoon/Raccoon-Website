@@ -1,8 +1,7 @@
 body {}
 
-p,
-h2 {
-    font-family: 'Open Sans', sans-serif;
+p, h2 {
+    font-family: 'Metropolis', sans-serif;
 }
 
 div#PageLoader {
@@ -23,7 +22,7 @@ img#BigRaccoon {
     opacity: 0;
     width: 150px;
     transform: rotate(360deg);
-    transition: transform 0.6s ease-in-out, opacity 1s;
+    transition: transform 0.8s ease-in-out, opacity 1s;
 }
 
 div#ModalBox {
@@ -65,8 +64,7 @@ span#ModalExit {
     transition: color 0.5s;
 }
 
-span#ModalExit:hover,
-span#ModalExit:active {
+span#ModalExit:hover, span#ModalExit:active {
     color: rgb(168, 168, 168);
 }
 
@@ -141,8 +139,7 @@ div.ItemGroup {
     transition: background-color 0.5s;
 }
 
-div.ItemGroup:hover,
-div.ItemGroup:active {
+div.ItemGroup:hover, div.ItemGroup:active {
     background-color: orange;
     transition: background-color 0.5s;
 }
@@ -157,8 +154,7 @@ span.RemoveItem {
     align-self: flex-start;
 }
 
-span.RemoveItem:hover,
-span.RemoveItem:active {
+span.RemoveItem:hover, span.RemoveItem:active {
     color: white;
 }
 
