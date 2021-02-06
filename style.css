@@ -10,7 +10,7 @@ div#PageLoader {
     flex-flow: column;
     height: 100%;
     width: 100%;
-    transition: opacity 5s;
+    animation: FadeIn 5s forwards;
     z-index: 100;
     position: absolute;
     top: 0;
@@ -20,9 +20,27 @@ div#PageLoader {
 }
 
 img#BigRaccoon {
-    opacity: 0;
     width: 150px;
-    transform: rotate(360deg);
-    transition: transform 0.7s ease-in-out, opacity 1s;
+    animation: SpinIcon 1s infinite ease-in-out;
     margin-bottom: 50px;
+}
+
+/* CSS Keyframes spin animation - shout out to Christoph for this */
+
+@keyframes SpinIcon {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes FadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
